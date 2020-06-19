@@ -1,4 +1,10 @@
 # Docker
+- task: AzureKeyVault@1
+  inputs:
+    azureSubscription: 'Pay-As-You-Go (855cd8e2-f30f-4599-9d5b-f2d8a59d11fb)'
+    KeyVaultName: 'demokeyvaultbalu'
+    SecretsFilter: '*'
+    RunAsPreJob: false
 # Build a Docker image 
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
